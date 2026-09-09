@@ -4,18 +4,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=devie-width, initial-scale=1.0">
         <title>Login - HotelSystem</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <style>
+        form {
+            width: 100%; 
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .campo-entrada {
+            width: 100%;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        button, input[type="submit"] {
+            background-color: #0056b3;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        </style>
     </head>
     <body>
         <h1>HotelSystem</h1>
-        <h2>Acesso do Cliente</h2>
+        <h2 styele="color: #333333; text-align center;">Acesso do Cliente</h2>
 
         <from action="autenticar.php" method="POST">
             <div>
-                <label for="email">e-mail</label>
+                <label for="email">email</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div>
-                <label for="senha">e-mail</label>
+                <label for="senha">senha</label>
                 <input type="password" id="senha" name="senha" required>
             </div>
             <div>
