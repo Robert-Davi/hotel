@@ -3,9 +3,9 @@
 require_once "conexao.php";
 
 $nome = $_POST['nome'];
-$email =$_POST['email'];
-$telefone =$_POST['telefone'];
-$senha =$_POST['senha'];
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
+$senha = $_POST['senha'];
 
 $sql = "INSERT INTO cliente (nome,email,telefone,senha) VALUES ('$nome', '$email', '$telefone', '$senha')";
 

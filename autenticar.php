@@ -11,13 +11,11 @@ $resultado = mysqli_query(
     $sql
 );
 
-$cliente = mysqli_fetch_assoc($resultado)
-
-if($cliente){
-    echo "Login realizado com sucesso";
+if(mysqli_num_rows($resultado) > 0){
+    header("Location: minhas_reservas.php");
+    exit();
 }else{
-    echo "Email ou senha inválidos \n";
-    echo "<a href='login.html'>Voltar<\a>";
+    header(location: login.html);
+    exit;
 }
-
 ?>
