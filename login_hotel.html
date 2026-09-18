@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Hotel</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body class="fundo-pagina" style="text-align: center;">
+    <h1 style="color: rgb(1, 1, 10); ">Santa Estrela</h1> 
+    <h2>Acesso do Hotel/Parceiro</h2>
+
+    <form action="autenticar_hotel.php" method="POST">
+        
+        <label for="email_hotel">E-mail:</label><br>
+        <input type="email" id="email_hotel" name="email_hotel" required><br><br>
+        <br><br>
+        <label for="senha_hotel">Senha:</label><br>
+        <input type="password" id="senha_hotel" name="senha_hotel" required><br><br>
+        <br><br>
+        <button type="submit">Acessar Painel do Hotel</button>
+
+    </form>
+
+    <br>
+
+    <a href="cadastro_hotel.html">Para novos parceiros</a>
+
+</body>
+</html>

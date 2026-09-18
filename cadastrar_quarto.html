@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de quarto</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body class="fundo-pagina" style="text-align: center;">
+    <h1 style="color: rgb(1, 1, 10); ">Santa Estrela</h1> 
+    <h2>Cadastrar quarto</h2>
+
+    <form action="salvar_quarto.php" method="POST">
+        
+        <label for="id_hotel">ID do Hotel:</label><br>
+        <input type="number" id="id_hotel" name="id_hotel" required><br><br>
+        <br><br>
+
+        <label for="numero_quarto">Número do Quarto:</label><br>
+        <input type="text" id="numero_quarto" name="numero_quarto" required><br><br>
+        <br><br>
+         
+        <label for="tipo_quarto">Tipo de Quarto:</label>
+        <select name="tipo_quarto" id="tipo_quarto">
+            <option value="solteiro">Solteiro</option>
+            <option value="casal">Casal</option>
+            <option value="suite">Suíte Luxo</option>
+        </select><br><br>
+        <br><br>
+
+        <label for="preco">Preço da Diário:</label><br>
+        <input type="number" id="preco" name="preco" required><br><br>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <br>
+
+    <a href="logout_hotel.php">Sair/Log out</a>
+
+</body>
+</html>
