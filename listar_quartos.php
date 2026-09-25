@@ -24,7 +24,8 @@ $resultado = mysqli_query($conexao, $sql);
             </tr>
             <?php
             while ($linha = mysqli_fetch_assoc($resultado)){
-            echo "<tr>
+            echo "
+            <tr>
                 <td>".$linha['nome']."</td>
                 <td>".$linha['cidade']."</td>
                 <td>".$linha['estrelas']."</td>
