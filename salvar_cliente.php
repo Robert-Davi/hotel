@@ -7,6 +7,7 @@ $email = $_POST['email'];
 $telefone = $_POST['telefone'];
 $senha = $_POST['senha'];
 
+$senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 $sql = "INSERT INTO cliente (nome,email,telefone,senha) VALUES ('$nome', '$email', '$telefone', '$senha')";
 
 
