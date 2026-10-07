@@ -1,5 +1,10 @@
 <?php
+session_start();
 
+if( !isset($_SESSION['logado']) || $_SESSION['logado'] !== true ){
+    header("location: login.html");
+    exit();
+}
 require_once "conexao.php";
 
 $sql = "SELECT
@@ -44,7 +49,7 @@ $resultado = mysqli_query($conexao, $sql);
                     <td>".$linha['preco_diaria']."</td>
                     <td>".$linha['data_entrada']."</td>
                     <td>".$linha['data_saida']."</td>
-                <tr>"
+                <tr>";
               }
             ?>
         </tr>
